@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Refacciones Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="chatbot.css">  
+</head>
+
+<body>
+
+  <!-- Contenido sitio web -->
+
+  <div id="chat-button" class="chat-button"></div>
+
+  <div id="chat-container" class="hidden">
+
+    <div id="chat-box" class="border rounded p-2">
+
+      <p class="bot-message">Hola, mi nombre es Cristina bot ¿En qué puedo ayudarte?</p>
+      <p class="bot-message" data-option="1">1-Consulta de Inventario</p>
+      <p class="bot-message" data-option="2">2-¿Como llegar?</p>
+      <p class="bot-message" data-option="3">3-Atención Personalizada</p>
+    
+
+      <div id="chat-log" class="mb-3" style="max-height: 200px; overflow-y: scroll;"></div>
+
+      <div class="input-group">
+        <input type="text" id="user-input" name="user-input" class="form-control" placeholder="Escribe tu mensaje...">
+
+        <div class="input-group-append">
+          <button id="send-button">Enviar</button>
+          <button id="cerrar-chat">Cerrar</button> 
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script  src="chatbot.js"></script>
+  <script   src="conexion.js"></script>
+  
+
+
+
+
+</body>
+</html>
